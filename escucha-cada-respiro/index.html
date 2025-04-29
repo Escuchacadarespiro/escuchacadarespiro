@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escucha Cada Respiro</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefcfb;
+      color: #3e3e3e;
+    }
+    header {
+      background: linear-gradient(to right, #89f7fe, #66a6ff);
+      color: #fff;
+      padding: 2em;
+      text-align: center;
+      font-family: 'Georgia', serif;
+    }
+    header img {
+      max-width: 100px;
+      display: block;
+      margin: 0 auto 1em;
+    }
+    nav {
+      background-color: #88c0d0;
+      display: flex;
+      justify-content: center;
+      padding: 0.5em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1em;
+      font-weight: bold;
+    }
+    section {
+      padding: 2em;
+    }
+    h2 {
+      font-family: 'Georgia', serif;
+      color: #5e81ac;
+    }
+    .tarifas, .galeria, .maestra {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+    .tarifa, .foto {
+      background: white;
+      padding: 1em;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex: 1 1 calc(33% - 2em);
+      transition: transform 0.3s;
+    }
+    .tarifa:hover, .foto:hover {
+      transform: scale(1.02);
+    }
+    .foto img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      height: 200px;
+    }
+    footer {
+      background-color: #88c0d0;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="tus-fotos/logo.png" alt="Logo de Escucha Cada Respiro">
+    <h1>Escucha Cada Respiro</h1>
+    <p>Descubre la música que llevas dentro</p>
+  </header>
+  <nav>
+    <a href="#tarifas">Tarifas</a>
+    <a href="#galeria">Galería</a>
+    <a href="#maestra">La Maestra</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="presentacion">
+    <h2>Bienvenidos</h2>
+    <p>Ofrezco clases de piano para todas las edades y niveles. Mi enfoque es sensible, relajado y adaptado a tus intereses musicales. Conecta con la música como forma de expresión personal y serenidad.</p>
+  </section>
+
+  <section id="tarifas">
+    <h2>Tarifas</h2>
+    <div class="tarifas">
+      <div class="tarifa">
+        <h3>Clase individual</h3>
+        <p>$250 MXN / sesión de 1 hora</p>
+      </div>
+      <div class="tarifa">
+        <h3>Bono mensual</h3>
+        <p>$900 MXN / 4 sesiones</p>
+      </div>
+      <div class="tarifa">
+        <h3>Clase online</h3>
+        <p>$200 MXN / sesión de 1 hora</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria">
+      <div class="foto"><img src="tus-fotos/foto1.jpg" alt="Clase de piano 1"></div>
+      <div class="foto"><img src="tus-fotos/foto2.jpg" alt="Clase de piano 2"></div>
+      <div class="foto"><img src="tus-fotos/foto3.jpg" alt="Clase de piano 3"></div>
+    </div>
+    <p style="margin-top:1em; font-size:0.9em; color:#666;">Puedes reemplazar estas imágenes en la carpeta <strong>tus-fotos</strong> de tu proyecto web. Incluye también un archivo llamado <strong>logo.png</strong> para el logo.</p>
+  </section>
+
+  <section id="maestra">
+    <h2>Sobre la Maestra</h2>
+    <p>Conoce a quien estará guiándote en este viaje musical. Su experiencia, calidez y sensibilidad hacen de cada clase una experiencia única.</p>
+    <div class="maestra">
+      <div class="foto"><img src="tus-fotos/maestra1.jpg" alt="Maestra de piano 1"></div>
+      <div class="foto"><img src="tus-fotos/maestra2.jpg" alt="Maestra de piano 2"></div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes escribirme a <a href="mailto:sofia.piano@email.com">sofia.piano@email.com</a> o seguirme en mis redes sociales:</p>
+    <ul>
+      <li><a href="https://instagram.com/sofia_piano" target="_blank">Instagram</a></li>
+      <li><a href="https://facebook.com/sofiapiano" target="_blank">Facebook</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Escucha Cada Respiro</p>
+  </footer>
+</body>
+</html>
